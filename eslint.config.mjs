@@ -1,4 +1,4 @@
-import compat from "eslint-plugin-compat";
+// import compat from "eslint-plugin-compat";
 import escompat from "eslint-plugin-escompat";
 
 import { FlatCompat } from "@eslint/eslintrc";
@@ -11,7 +11,7 @@ const flatCompat = new FlatCompat({
 });
 
 export default [
-    ...flatCompat.config(compat.configs.recommended),
+    // ...flatCompat.config(compat.configs.recommended),
     ...flatCompat.config(escompat.configs.recommended),
     {
         files: ['*.js'],
