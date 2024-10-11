@@ -3,17 +3,10 @@ import escompat from "eslint-plugin-escompat";
 
 export default [
     compat.configs['flat/recommended'],
-    escompat.configs['flat/recommended'],
     {
-        files: ['*.js'],
-        settings: {
-            lintAllEsApis: true
-        },
+        ...escompat.configs['flat/recommended'],
         languageOptions: {
-            parserOptions: {
-                ecmaVersion: 2021,
-                sourceType: 'module'
-            }
+            ecmaVersion: 14
         },
     }
 ];
